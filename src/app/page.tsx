@@ -10,8 +10,8 @@ export default function Home() {
             <path d="M914.076 0H0V1080H457.038L894.519 540L1332 0H914.076Z" fill="#DFFEEF"/>
           </g>
           <defs>
-            <filter id="filter0_d_1_44" x="-8" y="-5" width="1352" height="1100" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <filter id="filter0_d_1_44" x="-8" y="-5" width="1352" height="1100" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+              <feFlood floodOpacity="0" result="BackgroundImageFix"/>
               <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
               <feOffset dx="2" dy="5"/>
               <feGaussianBlur stdDeviation="5"/>
