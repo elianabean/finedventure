@@ -27,10 +27,14 @@ export default function Home() {
           <p className="text-primary font-raleway text-[70px] italic font-medium leading-normal ">The Financial Development</p>
           <p className="text-primary font-raleway text-[70px] italic font-medium leading-normal">Platform</p>
         
-          <p className="text-primary font-lato text-[70px] italic font-medium leading-normal ">Elevate </p> 
-          <span className="text-primary font-lato text-[70px] italic font-medium leading-normal ">your Financial literacy. Fully </span>
-          <span className="text-primary font-montserrat text-[70px] italic font-medium leading-normal ">Compete in Business</span>
-          <span className="text-primary font-montserrat text-[70px] italic font-medium leading-normal ">Competitions. Money Talks, We Teach.</span>
+          <span className="text-primary font-montserrat text-[30px] italic font-bold leading-normal ">Elevate </span> 
+          <span className="text-black font-montserrat text-[30px] italic font-normal leading-normal ">your Financial literacy.</span>
+          <br></br>
+          <span className="text-black font-montserrat text-[30px] italic font-normal leading-normal ">Fully</span>
+          <span className="text-primary font-montserrat text-[30px] italic font-bold leading-normal "> Compete </span>
+          <span className="text-black font-montserrat text-[30px] italic font-normal leading-normal ">in Business </span>
+          <span className="text-black font-montserrat text-[30px] italic font-normal leading-normal ">Competitions.</span>
+          <p className="text-primary font-montserrat text-[40px] font-semibold leading-normal mt-20">Money Talks, We Teach.</p>
         </div>
     </div>
   );

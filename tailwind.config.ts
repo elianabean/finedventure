@@ -19,10 +19,10 @@ const config: Config = {
         "light-green": "#F0FFF8",
         "primary": "#0A7968",
       }, fontFamily: {
-        "raleway": ['var(--font-raleway)'],
-        "montserrat": ['var(--font-montserrat)'],
-        "lato": ['var(--font-lato)'],
-      }
+        'raleway': ['var(--font-raleway)'],
+        'montserrat': ['var(--font-montserrat)'],
+        'lato': ['var(--font-lato)'],
+      },
     },
   },
   darkMode: "class",
