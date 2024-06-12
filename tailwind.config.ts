@@ -22,6 +22,7 @@ const config: Config = {
         'raleway': ['var(--font-raleway)'],
         'montserrat': ['var(--font-montserrat)'],
         'lato': ['var(--font-lato)'],
+        'inter': ['var(--font-inter)'],
       },
     },
   },

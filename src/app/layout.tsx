@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Raleway, Montserrat, Lato } from 'next/font/google'
+import { Raleway, Montserrat, Lato, Inter } from 'next/font/google'
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,13 +20,18 @@ const montserrat = Montserrat({
 })
 const lato = Lato({ weight: ['100', '300', '400', '700', '900'], style: ['italic','normal'], subsets: ["latin"] ,display: 'swap', variable: '--font-lato'});
 
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+})
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${raleway.variable} ${montserrat.variable} ${lato.variable}`}>
+    <html lang="en" className={`${raleway.variable} ${montserrat.variable} ${lato.variable} ${inter.variable}`}>
       <body >{children}</body>
     </html>
   );

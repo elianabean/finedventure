@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Header from "./components/Header";
+import SponsorsMarquee from "./components/SponsorsMarquee";
+
 
 export default function Home() {
   return (
@@ -35,6 +37,16 @@ export default function Home() {
           <span className="text-black font-montserrat text-[30px] italic font-normal leading-normal ">in Business </span>
           <span className="text-black font-montserrat text-[30px] italic font-normal leading-normal ">Competitions.</span>
           <p className="text-primary font-montserrat text-[40px] font-semibold leading-normal mt-20">Money Talks, We Teach.</p>
+        </div>
+
+        <div className="flex flex-col mb-[100px]">
+          <div className="mt-[83px] w-full text-center text-teal-700 text-[27px] font-semibold font-montserrat leading-10 mb-[40px]" >Used by Students From</div>
+          <SponsorsMarquee></SponsorsMarquee>
+        </div>
+
+        <div className="flex flex-col bg-[#DFFEEF]">
+          <div className="text-[#0A7968] text-[27px] font-semibold leading-[150%] text-center mt-[33px]">Business Competitions</div>
+          <div className="text-[#0A7968] text-center font-montserrat text-[40px] font-normal leading-[150%] mt-[20px]">Prepare with the Top Award Winners in each Business Competition</div>
         </div>
     </div>
   );
