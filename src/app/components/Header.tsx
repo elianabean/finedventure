@@ -10,7 +10,7 @@ import {
   
   export default function Header() {
     return (
-      <Navbar className="bg-transparent fixed py-[50px]" maxWidth="full" isBlurred={false}>
+      <Navbar className="bg-transparent fixed h-[10vh]" maxWidth="full" isBlurred={true}>
         <NavbarBrand className="px-[80px]">
             <p className="text-primary font-raleway text-[55px] italic font-bold leading-normal">FinEdVenture</p>
         </NavbarBrand>
