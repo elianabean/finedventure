@@ -5,6 +5,7 @@ import yisComp from "../../public/images/yisComp.png";
 import whartonComp from "../../public/images/whartonComp.png";
 import decaComp from "../../public/images/decaComp.png";
 import {Button} from "@nextui-org/react";
+import Money from "./components/3dMoney/Scene";
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
           </defs>
         </svg>
 
-        <div className="absolute top-0 mt-[294px] ml-[80px]">
+        <div className="absolute top-[294px] ml-[80px]">
           <p className="text-primary font-raleway text-[70px] italic font-medium leading-normal ">The Financial Development</p>
           <p className="text-primary font-raleway text-[70px] italic font-medium leading-normal">Platform</p>
         
@@ -40,6 +41,10 @@ export default function Home() {
           <span className="text-black font-montserrat text-[30px] italic font-normal leading-normal ">in Business </span>
           <span className="text-black font-montserrat text-[30px] italic font-normal leading-normal ">Competitions.</span>
           <p className="text-primary font-montserrat text-[40px] font-semibold leading-normal mt-20">Money Talks, We Teach.</p>
+        </div>
+
+        <div className="absolute right-0 top-0 h-[100vh] flex flex-col justify-center">
+          <Money></Money>
         </div>
 
         <div className="flex flex-col mb-[100px]">
@@ -94,9 +99,9 @@ export default function Home() {
             <p className="w-[961px] text-[#0A7968] text-right font-montserrat text-[53px] font-normal leading-[50px] capitalize">
             Comprehensive Financial Mastery
             </p>
-            <p className="w-[775px] h-[243px] shrink-0 text-[#02362E] text-right font-inter text-3xl font-normal leading-[150%] mt-[93px]">Our curriculum is formatted in a <span className="font-bold">multi-leveled structure</span>, a beginner and advanced program. </p>
+            <p className="w-[775px] h-[243px] shrink-0 text-[#02362E] text-right font-inter text-3xl font-normal leading-[150%] mt-[30px]">Our curriculum is formatted in a <span className="font-bold">multi-leveled structure</span>, a beginner and advanced program. </p>
           </div>
-        </div>
+        </div>        
     </div>
   );
 }
