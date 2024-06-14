@@ -1,8 +1,7 @@
-import { useAnimations, useGLTF, useScroll } from "@react-three/drei";
+import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { Group, MathUtils } from "three";
-import {useMotionValue, useSpring} from "framer-motion";
 
 useGLTF.preload("/bag_of_money.glb");
 
@@ -18,8 +17,8 @@ export default function Model() {
   )
 
   return (
-    <group ref={group} scale={[4, 4, 4]}>
-      <primitive object={scene}/>
+    <group ref={group} scale={[30, 30, 30]} position={[0, -1, 0]} >
+      <primitive object={scene} />
     </group>
   )
 }
