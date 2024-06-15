@@ -13,7 +13,7 @@ import logoHarvard from "../../../public/images/logoHarvard.png"
 
 export default function SponsorsMarquee() {
     return (
-        <div>
+        <div className="relative">
             <Marquee direction="right" speed={80} className="gap-10 overflow-y-hidden" gradient={true}>
                 <div className="flex flex-row items-end mr-[116px]">
                     <div className="relative w-[83px] h-[87px] grayscale">
