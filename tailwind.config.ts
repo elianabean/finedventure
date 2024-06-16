@@ -24,6 +24,9 @@ const config: Config = {
         'lato': ['var(--font-lato)'],
         'inter': ['var(--font-inter)'],
       },
+      screens: {
+        '3xl': '1920px',
+      },
     },
   },
   darkMode: "class",

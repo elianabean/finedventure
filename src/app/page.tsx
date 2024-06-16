@@ -28,28 +28,28 @@ export default function Home() {
 
         <div className="h-full min-h-[100vh]">
           <div className="lg:-mr-100 absolute inset-y-0 right-[40%] -mr-60 w-[200%] origin-top-right skew-x-[-40deg] bg-[#DFFEEF] shadow-xl shadow-[#0B9B85]/60 ring-1 ring-blue-50" aria-hidden="true" ></div>    
-          <div className="absolute top-[294px] ml-[80px]">
+          <div className="absolute top-[30%] ml-[80px]">
             <Reveal>
-            <p className="text-primary font-raleway text-[70px] italic font-medium leading-normal pr-2" >The Financial Development</p>
+            <p className="text-primary font-raleway 3xl:text-[70px] xl:text-[50px] italic font-medium leading-normal pr-2" >The Financial Development</p>
             </Reveal>
             
             <Reveal>
-            <p className="text-primary font-raleway text-[70px] italic font-medium leading-normal pr-2">Platform</p>
+            <p className="text-primary font-raleway 3xl:text-[70px] xl:text-[50px] italic font-medium leading-normal pr-2">Platform</p>
             </Reveal>
           
             <Reveal>
-            <span className="text-primary font-montserrat text-[30px] italic font-bold leading-normal ">Elevate <span className="text-black font-montserrat text-[30px] italic font-normal leading-normal pr-2">your Financial literacy.</span></span> 
+            <span className="text-primary font-montserrat 3xl:text-[40px] xl:text-2xl italic font-bold leading-normal ">Elevate <span className="text-black font-montserrat 3xl:text-[40px] xl:text-2xl italic font-normal leading-normal pr-2">your Financial literacy.</span></span> 
             
             </Reveal>
             <div className="h-[10px]"></div>
 
             <Reveal>
-            <span className="text-black font-montserrat text-[30px] italic font-normal leading-normal pr-2">Fully <span className="text-primary font-montserrat text-[30px] italic font-bold leading-normal"> Compete </span>in Business Competitions.</span>
+            <span className="text-black font-montserrat 3xl:text-[40px] xl:text-2xl italic font-normal leading-normal pr-2">Fully <span className="text-primary font-montserrat 3xl:text-[40px] xl:text-2xl italic font-bold leading-normal"> Compete </span>in Business Competitions.</span>
             </Reveal>
             
             
             <Reveal>
-            <p className="text-primary font-montserrat text-[40px] font-semibold leading-normal mt-20 pr-2">Money Talks, We Teach.</p>
+            <p className="text-primary font-montserrat 3xl:text-[40px] xl:text-3xl font-semibold leading-normal mt-20 pr-2">Money Talks, We Teach.</p>
             </Reveal>
           </div>
         
@@ -68,7 +68,7 @@ export default function Home() {
           <div className="text-[#0A7968] text-[27px] font-semibold leading-[150%] text-center mt-[33px]">Business Competitions</div>
           <div className="text-[#0A7968] text-center font-montserrat text-[40px] font-normal leading-[150%] mt-[20px]">Prepare with the Top Award Winners in each Business Competition</div>
 
-          <div className="flex flex-row gap-[84px] mx-[55px] mt-[20px] justify-center">
+          <div className="flex flex-row flex-wrap gap-[84px] mx-[55px] mt-[20px] justify-center">
             <div className="flex flex-col items-center">
               <div className="relative w-[500px] h-[657px] ">
               <Image src={yisComp} alt="YIS Global Stock Pitch Competition" fill style={{objectFit: "cover"}} placeholder="blur"/>
