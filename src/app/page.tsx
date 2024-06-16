@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import Header from "./components/Header";
 import SponsorsMarquee from "./components/SponsorsMarquee";
@@ -6,26 +7,50 @@ import whartonComp from "../../public/images/whartonComp.png";
 import decaComp from "../../public/images/decaComp.png";
 import {Button} from "@nextui-org/react";
 import Money from "./components/3dMoney/Scene";
+import { motion, Variants } from "framer-motion";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import {Reveal} from "./components/Reveal";
 
 export default function Home() {
+  useEffect(() => {
+    Aos.init({
+      easing: "ease-out-cubic",
+      offset: 0,
+      duration: 1000,
+    });
+  });
+
   return (
     <div className="bg-light-green h-full w-[100vw]">
         <Header></Header>
 
         <div className="h-full min-h-[100vh]">
-          <div className="lg:-mr-100 absolute inset-y-0 right-[40%] -mr-60 w-[200%] origin-top-right skew-x-[-40deg] bg-[#DFFEEF] shadow-xl shadow-[#0B9B85]/60 ring-1 ring-blue-50" aria-hidden="true"></div>    
+          <div className="lg:-mr-100 absolute inset-y-0 right-[40%] -mr-60 w-[200%] origin-top-right skew-x-[-40deg] bg-[#DFFEEF] shadow-xl shadow-[#0B9B85]/60 ring-1 ring-blue-50" aria-hidden="true" ></div>    
           <div className="absolute top-[294px] ml-[80px]">
-            <p className="text-primary font-raleway text-[70px] italic font-medium leading-normal ">The Financial Development</p>
-            <p className="text-primary font-raleway text-[70px] italic font-medium leading-normal">Platform</p>
+            <Reveal>
+            <p className="text-primary font-raleway text-[70px] italic font-medium leading-normal pr-2" >The Financial Development</p>
+            </Reveal>
+            
+            <Reveal>
+            <p className="text-primary font-raleway text-[70px] italic font-medium leading-normal pr-2">Platform</p>
+            </Reveal>
           
-            <span className="text-primary font-montserrat text-[30px] italic font-bold leading-normal ">Elevate </span> 
-            <span className="text-black font-montserrat text-[30px] italic font-normal leading-normal ">your Financial literacy.</span>
-            <br></br>
-            <span className="text-black font-montserrat text-[30px] italic font-normal leading-normal ">Fully</span>
-            <span className="text-primary font-montserrat text-[30px] italic font-bold leading-normal "> Compete </span>
-            <span className="text-black font-montserrat text-[30px] italic font-normal leading-normal ">in Business </span>
-            <span className="text-black font-montserrat text-[30px] italic font-normal leading-normal ">Competitions.</span>
-            <p className="text-primary font-montserrat text-[40px] font-semibold leading-normal mt-20">Money Talks, We Teach.</p>
+            <Reveal>
+            <span className="text-primary font-montserrat text-[30px] italic font-bold leading-normal ">Elevate <span className="text-black font-montserrat text-[30px] italic font-normal leading-normal pr-2">your Financial literacy.</span></span> 
+            
+            </Reveal>
+            <div className="h-[10px]"></div>
+
+            <Reveal>
+            <span className="text-black font-montserrat text-[30px] italic font-normal leading-normal pr-2">Fully <span className="text-primary font-montserrat text-[30px] italic font-bold leading-normal"> Compete </span>in Business Competitions.</span>
+            </Reveal>
+            
+            
+            <Reveal>
+            <p className="text-primary font-montserrat text-[40px] font-semibold leading-normal mt-20 pr-2">Money Talks, We Teach.</p>
+            </Reveal>
           </div>
         
         
