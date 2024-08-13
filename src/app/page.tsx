@@ -9,48 +9,24 @@ import {Button} from "@nextui-org/react";
 import Money from "./components/3dMoney/Scene";
 import { motion, Variants } from "framer-motion";
 import { useEffect } from "react";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import {Reveal} from "./components/Reveal";
 
 export default function Home() {
-  useEffect(() => {
-    Aos.init({
-      easing: "ease-out-cubic",
-      offset: 0,
-      duration: 1000,
-    });
-  });
-
   return (
-    <div className="bg-light-green h-full w-[100vw]">
+    <div className="bg-white h-full w-[100vw]">
         <Header></Header>
 
         <div className="h-full min-h-[100vh]">
           <div className="lg:-mr-100 absolute inset-y-0 right-[40%] -mr-60 w-[200%] origin-top-right skew-x-[-40deg] bg-[#DFFEEF] shadow-xl shadow-[#0B9B85]/60 ring-1 ring-blue-50" aria-hidden="true" ></div>    
           <div className="absolute top-[30%] ml-[80px]">
-            <Reveal>
-            <p className="text-primary font-raleway 3xl:text-[70px] xl:text-[50px] italic font-medium leading-normal pr-2" >The Financial Development</p>
-            </Reveal>
-            
-            <Reveal>
-            <p className="text-primary font-raleway 3xl:text-[70px] xl:text-[50px] italic font-medium leading-normal pr-2">Platform</p>
-            </Reveal>
+            <p className="text-primary font-raleway text-[65px] font-bold leading-[150%] w-[80%]" >Your Financial Development Platform</p>
           
-            <Reveal>
-            <span className="text-primary font-montserrat 3xl:text-[40px] xl:text-2xl italic font-bold leading-normal ">Elevate <span className="text-black font-montserrat 3xl:text-[40px] xl:text-2xl italic font-normal leading-normal pr-2">your Financial literacy.</span></span> 
+            <p className="text-primary font-montserrat 3xl:text-[40px] xl:text-2xl italic font-bold leading-normal mt-[90px]">Elevate <span className="text-black font-montserrat 3xl:text-[40px] xl:text-2xl italic font-normal leading-normal pr-2">your Financial literacy.</span></p> 
             
-            </Reveal>
-            <div className="h-[10px]"></div>
-
-            <Reveal>
-            <span className="text-black font-montserrat 3xl:text-[40px] xl:text-2xl italic font-normal leading-normal pr-2">Fully <span className="text-primary font-montserrat 3xl:text-[40px] xl:text-2xl italic font-bold leading-normal"> Compete </span>in Business Competitions.</span>
-            </Reveal>
+            <br/>
             
+            <p className="text-black font-montserrat 2xl:text-[40px] xl:text-2xl italic font-normal 3xl:leading-normal pr-2 w-[50%]">Fully <span className="text-primary font-montserrat 3xl:text-[40px] xl:text-2xl italic font-bold"> Compete </span>in Business Competitions.</p>
             
-            <Reveal>
-            <p className="text-primary font-montserrat 3xl:text-[40px] xl:text-3xl font-semibold leading-normal mt-20 pr-2">Money Talks, We Teach.</p>
-            </Reveal>
+            <p className="text-primary font-montserrat 3xl:text-[40px] xl:text-3xl font-semibold leading-[150%] mt-20 pr-2">Money Talks, We Teach.</p>
           </div>
         
         
@@ -64,30 +40,30 @@ export default function Home() {
             <SponsorsMarquee></SponsorsMarquee>
           </div>
 
-        <div className="flex flex-col bg-[#DFFEEF]">
+        <div className="flex flex-col bg-[#DFFEEF] justify-center items-center">
           <div className="text-[#0A7968] text-[27px] font-semibold leading-[150%] text-center mt-[33px]">Business Competitions</div>
-          <div className="text-[#0A7968] text-center font-montserrat text-[40px] font-normal leading-[150%] mt-[20px]">Prepare with the Top Award Winners in each Business Competition</div>
+          <div className="text-[#0A7968] text-center font-montserrat text-[40px] font-normal leading-[150%] mt-[20px] w-[55%]">Prepare with the Top Award Winners in each Business Competition</div>
 
           <div className="flex flex-row flex-wrap gap-[84px] mx-[55px] mt-[20px] justify-center">
             <div className="flex flex-col items-center">
-              <div className="relative w-[500px] h-[657px] ">
-              <Image src={yisComp} alt="YIS Global Stock Pitch Competition" fill style={{objectFit: "cover"}} placeholder="blur"/>
+              <div className="relative w-[500px] h-[657px] rounded-[40px] border-[3px] border-solid border-[#0A7968] shadow-[5px_5px_10px_5px_#9CE0D5]">
+              <Image src="/images/image-3.png" alt="YIS Global Stock Pitch Competition" fill style={{objectFit: "cover"}} className="rounded-[40px]"/>
               </div>
               <p className="mt-[29px] w-[485px] shrink-0 text-[#0A7968] text-center font-inter text-[35px] italic font-semibold leading-[150%]">YIS Global Stock Pitch Competition</p>
             <Button radius="md" className="w-[200px] h-[58px] mt-[40px] border border-solid border-[#0A7968] px-5 py-[9px] [background:#ECFFF6]"><p className="text-[#0A7968] text-center font-lato text-3xl font-medium leading-[normal]">Get Started</p></Button>
             </div>
 
             <div className="flex flex-col items-center">
-              <div className="relative w-[500px] h-[657px] ">
-              <Image src={whartonComp} alt="YIS Global Stock Pitch Competition" fill style={{objectFit: "cover"}} placeholder="blur"/>
+              <div className="relative w-[500px] h-[657px] rounded-[40px] border-[3px] border-solid border-[#0A7968] shadow-[5px_5px_10px_5px_#9CE0D5]">
+              <Image src="/images/image-1.png" alt="YIS Global Stock Pitch Competition" fill style={{objectFit: "cover"}} className="rounded-[40px]"/>
               </div>
               <p className="mt-[29px] w-[615px] shrink-0 text-[#0A7968] text-center font-inter text-[35px] italic font-semibold leading-[150%]">Wharton Global Investment Competition</p>
             <Button radius="md" className="w-[200px] h-[58px] mt-[40px] border border-solid border-[#0A7968] px-5 py-[9px] [background:#ECFFF6]"><p className="text-[#0A7968] text-center font-lato text-3xl font-medium leading-[normal]">Get Started</p></Button>
             </div>
 
             <div className="flex flex-col items-center">
-              <div className="relative w-[500px] h-[657px] ">
-              <Image src={decaComp} alt="YIS Global Stock Pitch Competition" fill style={{objectFit: "cover"}} placeholder="blur"/>
+              <div className="relative w-[500px] h-[657px] rounded-[40px] border-[3px] border-solid border-[#0A7968] shadow-[5px_5px_10px_5px_#9CE0D5]">
+              <Image src="/images/image-2.png" alt="DECA Business Competition" fill style={{objectFit: "cover"}} className="rounded-[40px]"/>
               </div>
               <p className="mt-[29px] w-[485px] shrink-0 text-[#0A7968] text-center font-inter text-[35px] italic font-semibold leading-[150%]">DECA Business</p>
               <p className="w-[485px] shrink-0 text-[#0A7968] text-center font-inter text-[35px] italic font-semibold leading-[150%]">Competition</p>

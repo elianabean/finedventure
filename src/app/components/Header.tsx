@@ -1,6 +1,7 @@
 'use client'
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button} from "@nextui-org/react";
 import React from "react";
+import {User} from "@nextui-org/react";
   
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -41,14 +42,13 @@ export default function Header() {
 
       <NavbarContent justify="end">
       <NavbarItem>
-            <Button as={Link} className="border-primary border-1 3xl:text-3xl xl:text-[20px] p-6 bg-transparent text-primary" href="#" variant="flat">
-              Login
-            </Button>
-          </NavbarItem>
-          <NavbarItem>
-            <Button as={Link} color="primary" className=" 3xl:text-3xl xl:text-[20px] p-6" href="#" variant="flat">
-              Sign Up
-            </Button>
+        <User
+            name="Login"
+            avatarProps={{
+              src: "https://i.pravatar.cc/150?u=a04258114e29026702d",
+            }}
+            className="[background:rgba(156,224,213,0.60)] rounded-[39px] text-[#0A7968] font-lato text-base font-semibold pr-4"
+          />
           </NavbarItem>
         </NavbarContent>
 

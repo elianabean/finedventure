@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Raleway, Montserrat, Lato, Inter } from 'next/font/google'
+import {AOSInit} from "./aos";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,6 +26,7 @@ const inter = Inter({
   display: 'swap',
   variable: '--font-inter',
 })
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -32,6 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${raleway.variable} ${montserrat.variable} ${lato.variable} ${inter.variable}`}>
+      <AOSInit/>
       <body >{children}</body>
     </html>
   );
